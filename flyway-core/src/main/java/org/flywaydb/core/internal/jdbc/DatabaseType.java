@@ -138,7 +138,7 @@ public enum DatabaseType {
             //   ex.: Google SQL Service/MySQL
             return MYSQL;
         }
-        if (databaseProductName.startsWith("Oracle")) {
+        if (databaseProductName.startsWith("Oracle") || databaseProductName.startsWith("DM")) {
             return ORACLE;
         }
         if (databaseProductName.startsWith("PostgreSQL 8") && postgreSQLVersion.contains("Redshift")) {
